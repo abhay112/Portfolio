@@ -1,0 +1,271 @@
+@font-face {
+    font-family: 'kajiro';
+    src: url('../../font/KajiroBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'helvicta';
+    src: url('../../font/Helvetica.ttf') format('truetype'); 
+}
+@font-face {
+    font-family: 'helvicta-light';
+    src: url('../../font/helvetica-light-587ebe5a59211.ttf') format('truetype'); 
+}
+@font-face {
+    font-family: 'helvicta-bold-obl';
+    src: url('../../font/Helvetica-Bold.ttf') format('truetype'); 
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: product sans;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.technology-cp{
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 150vh;
+    background-color: #f35757;
+    
+    .cards {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 80vh;
+        background-position: center;
+        background-size: cover;
+        padding: 4%;
+        background-color: rgb(0, 0, 0);
+        // overflow: hidden;
+        .count{
+            font-family: 'kajiro';
+            font-weight: 100;
+            font-size:100px;
+            color: rgb(241, 129, 1);
+            padding-bottom: 0.5rem;
+        }
+        .card-container{
+            padding-top: 2rem;
+            display: flex;
+            border-top:1px solid #afafaf;
+            .left-box{
+                width: 30%;
+                h2{
+                    font-family: 'kajiro';
+                    font-weight: 200;
+                    font-size:120px;
+                    color: rgb(255, 255, 255);
+                }
+            }
+            .right-box {
+                width: 70%;
+                .card-content-details{
+                    font-family: "helvicta-light";
+                    font-weight: 100;
+                    font-size: 30px;
+                    padding-bottom: 2rem;
+                    color: #fff;
+                }
+                .card-tech{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    .cards-count{
+                        position: relative;
+                        width: 48%;
+                        cursor: pointer;
+                        .image {
+                            display: block;
+                            width: 20%;
+                            height: auto;
+                            margin-top: 10px;
+                          }
+                          .overlay {
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            height: 100%;
+                            width: 60%;
+                            opacity: 1;
+                            transition: .5s ease;
+                            background-image: linear-gradient(-135deg, #f5f7fa 0%, #f3f6fc 100%);
+                            overflow: hidden; /* Hide overflowing content */
+                            border-radius: 20px; 
+                            animation: border_anim 1s linear forwards;
+                            .cards-text {
+                                color: black;
+                                font-size: 20px;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                text-align: center;
+                                transition: .5s ease; /* Add transition for smooth movement */
+                                font-size: 30px;
+                                font-family: "helvicta";
+                                font-weight: 100;
+                            
+                            }
+                        }
+                        &:hover .overlay {
+                            opacity: 0.5;
+                            border-radius: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #card-one {
+        top: 130%;
+    }
+    
+    #card-two {
+        top: 230%;
+    }
+    
+    #card-three {
+        top: 250%;
+    }
+    .text{
+        position: absolute;
+        width: 100%;
+        top: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1{
+            font-size: 3rem;
+            color: #fff;
+            text-align: center;
+        }
+    }
+    
+}
+
+
+
+
+// .cards-1 .count{
+//     font-family: 'kajiro';
+//     font-weight: 100;
+//     font-size:100px;
+//     color: rgb(241, 129, 1);
+//     padding-bottom: 0.5rem;
+// }
+// .card-container{
+//     padding-top: 2rem;
+//     display: flex;
+//     border-top:1px solid #afafaf;
+// }
+// .left-box{
+//     width: 30%;
+// }
+// .left-box h2{
+//     font-family: 'kajiro';
+//     font-weight: 200;
+//     font-size:120px;
+//     color: rgb(255, 255, 255);
+// }
+// .right-box {
+//     width: 70%;
+// }
+// .right-box .card-content-details{
+//     font-family: "helvicta-light";
+//     font-weight: 100;
+//     font-size: 30px;
+//     padding-bottom: 2rem;
+//     color: #fff;
+// }
+// .card-tech{
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: 10px;
+// }
+// .cards-count{
+//     position: relative;
+//     width: 48%;
+//     cursor: pointer;
+// }
+// .image {
+//     display: block;
+//     width: 20%;
+//     height: auto;
+//     margin-top: 10px;
+//   }
+  
+//   .cards-count .overlay {
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     height: 100%;
+//     width: 60%;
+//     opacity: 1;
+//     transition: .5s ease;
+//     background-image: linear-gradient(-135deg, #f5f7fa 0%, #f3f6fc 100%);
+//     overflow: hidden; /* Hide overflowing content */
+//     border-radius: 20px; 
+//     animation: border_anim 1s linear forwards;
+// }
+
+// .cards-count:hover .overlay {
+//     opacity: 0.5;
+//     border-radius: 20px;
+// }
+// /* @keyframes border_anim {
+// 	0% {
+// 		width: 0%;
+// 	}
+// 	100% {
+// 		width: 100%;
+// 	}
+// } */
+
+// .cards-text {
+//     color: black;
+//     font-size: 20px;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     text-align: center;
+//     transition: .5s ease; /* Add transition for smooth movement */
+//     font-size: 30px;
+//     font-family: "helvicta";
+//     font-weight: 100;
+
+// }
+// .cards-1 h1{
+//     pointer-events: all;
+//     padding: .8vw 3vw;
+//     font-size: 3rem;
+//     margin-top: 2rem;
+//     font-family: 'kajiro';
+//     font-weight: 100;
+//     font-size: 200px;
+//     text-align: center;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     color: white;
+//     height: 100%;
+// }
+
+
+
+
+

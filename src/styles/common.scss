@@ -1,0 +1,108 @@
+@import '../font/stylesheet.css';
+
+:root {
+    // Font For Headings
+    --heading-lg: 110px;
+    --heading-md: 56px;
+    --heading-sm: 36px;
+  
+    // Font For Text
+    --text-lg: 36px;
+    --text-tmd: 30px;
+    --text-md: 28px;
+    --text-sm: 24px;
+    --text-sx: 20px;
+    --text-mini: 16px;
+  
+    // Line height
+    --line-height-default: 1.15;
+    --line-height-default-1: 1.25;
+  
+    // Letter Spacing
+    --letter-spacing-default: 0.02em;
+    --letter-spacing-1: 0.04em;
+  
+    // Font Family
+    --font-helvicta-bold: "helveticabold";
+    --font-helvicta: "helvetica";
+    --font-helvicta-regular: "helveticaregular";
+    --font-helvicta-light: "helveticalight";
+  
+    // Colors
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-black-1: #1f2124;
+    --color-grey: #828999;
+    --color-grey-1: #d9d9d9;
+    --color-orange: #ef732c;
+    --color-shade: #f5f6f6;
+  
+    // Spacings
+    --spacing-left: 100px;
+  
+    --section-spacing-lg: 120px;
+    --section-spacing-md: 100px;
+    --section-spacing-sm: 80px;
+    --section-spacing-xm: 60px;
+    --section-spacing-mini: 40px;
+    --section-spacing-xmini: 30px;
+}
+
+.heading-lg{
+    font-size: var(--heading-lg);
+    font-weight: 500 !important;
+    font-family: var(--font-helvicta-bold);
+}
+.heading-md{
+  font-size: var(--heading-md);
+  font-weight: 500 !important;
+}
+
+
+
+@media (max-width:1720px) {
+    :root{
+      --heading-lg: 80px;
+      --heading-md: 70px;
+      --text-sm: 22px;
+      --text-sx: 18px;
+
+    }
+}
+
+@media (max-width:1200px) {
+  :root{
+    --heading-lg: 60px;
+    --heading-md: 50px;
+    --text-sm: 18px;
+    --text-sx: 16px;
+
+  }
+}
+
+
+@media (max-width:991px) {
+  :root{
+    --heading-lg: 45px;
+    --heading-md: 30px;
+    --text-sm: 16px;
+    --text-sx: 15px;
+  }
+}
+
+@media (max-width:767px) {
+  :root{
+    --heading-lg: 35px;
+    --heading-md: 25px;
+    --text-sm: 15px;
+    --text-sx: 15px;
+  }
+}
+@media (max-width:600px) {
+  :root{
+    --heading-lg: 40px;
+    --heading-md: 25px;
+    --text-sm: 15px;
+    --text-sx: 15px;
+  }
+}
