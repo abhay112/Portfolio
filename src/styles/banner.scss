@@ -37,6 +37,26 @@
     }
   }
 
+  @media(max-width:1600px) {
+    .banner{
+      .mask, .banner-body{
+        
+        cursor: default;
+        p{
+          font-size: var(--heading-sm);
+        }
+        span{
+        }
+      }
+    
+      .mask{
+      
+        span{
+        }
+      }
+    }
+  }
+
   @media (max-width:1200px) {
     .banner{
       .mask p, .banner .banner-body p {
@@ -51,4 +71,26 @@
       }
     } 
 
+  }
+
+
+  @media(max-width:600px) {
+    .banner{
+      .mask, .banner-body{
+        
+        cursor: default;
+        p{
+          font-size: var(--heading-md);
+          text-align: center;
+        }
+        span{
+        }
+      }
+    
+      .mask{
+      
+        span{
+        }
+      }
+    }
   }

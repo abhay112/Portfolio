@@ -36,9 +36,9 @@ export default function Banner() {
         </motion.div>
 
         <div className="banner-body">
-          <p className="heading-lg">
-          I'm Abhay Verma, a <span>versatile and skilled</span> full-stack developer with a strong focus on delivering high-quality and impactful digital solutions.
-          </p>
+        <p className="heading-lg">Abhay Verma, a <span>Versatile </span>  Software Engineer 
+           with a strong focus on delivering impactful digital solutions.
+           Worked at <span>LUMIQ </span>for<span> 2 years</span>, gaining valuable experience.</p>
         </div>
       </div>
     </div>
